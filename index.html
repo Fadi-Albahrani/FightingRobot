@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+ <title>Robotic Arm Control</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+
+    <div class="content">
+
+
+        <img class="img" src="logo.png" alt="logo">
+
+
+        <form class="grid-container" action="script.php" method="get">
+
+            <!-- <div class="grid-container"> -->
+
+            <h3>Motor 1 </h3>
+            <input type="range" min="0" max="180" value="90" class="slider" id="myRange1"
+                oninput="this.nextElementSibling.value = this.value" name="motor1">
+            <output class="output">90</output>
+            <h3>Motor 2 </h3>
+            <input type="range" min="0" max="180" value="90" class="slider" id="myRange2"
+                oninput="this.nextElementSibling.value = this.value" name="motor2">
+            <output class="output">90</output>
+            <h3>Motor 3 </h3>
+            <input type="range" min="0" max="180" value="90" class="slider" id="myRange3"
+                oninput="this.nextElementSibling.value = this.value" name="motor3">
+            <output class="output">90</output>
+            <h3>Motor 4 </h3>
+            <input type="range" min="0" max="180" value="90" class="slider" id="myRange4"
+                oninput="this.nextElementSibling.value = this.value" name="motor4">
+            <output class="output">90</output>
+            <h3>Motor 5 </h3>
+            <input type="range" min="0" max="180" value="90" class="slider" id="myRange5"
+                oninput="this.nextElementSibling.value = this.value" name="motor5">
+            <output class="output">90</output>
+            <h3>Motor 6 </h3>
+            <input type="range" min="0" max="180" value="90" class="slider" id="myRange6"
+                oninput="this.nextElementSibling.value = this.value" name="motor6">
+            <output class="output">90</output>
+
+            <input type="text" class="offOnButton" id="onOffButton" value="off" name="onOffButton" onclick="onOff();">
+            <input type="submit" class="button" id="saveButton" value="save" name="saveButton">
+            
+
+            <!-- </div> -->
+
+        </form>
+
+    </div>
+
+
+    <script src="mainScript.js"></script>
+
+</body>
+
+</html>

@@ -3,19 +3,19 @@
 <html>
 
 <head>
- <title>Robotic Arm Control</title>
+    <title>Robotic Arm Control</title>
     <link rel="stylesheet" href="main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
+    </div>
+
     <div class="content">
-
-
         <img class="img" src="logo.png" alt="logo">
 
-
-        <form class="grid-container" action="script.php" method="get">
+        <form class="arm-container" action="script.php" method="get">
 
             <!-- <div class="grid-container"> -->
 
@@ -46,13 +46,31 @@
 
             <input type="text" class="offOnButton" id="onOffButton" value="off" name="onOffButton" onclick="onOff();">
             <input type="submit" class="button" id="saveButton" value="save" name="saveButton">
-            
 
             <!-- </div> -->
 
         </form>
 
+        <form class="base-top-container">
+            <div></div>
+            <input type="submit" class="direction-button" id="forward" value="Forward" name="forward">
+            <div></div>
+        </form>
+
+        <form class="base-mid-container">
+            <input type="submit" class="direction-button" id="left" value="Left" name="left">
+            <input type="submit" class="direction-button" id="stop" value="Stop" name="stop">
+            <input type="submit" class="direction-button" id="right" value="Rgiht" name="right">
+        </form>
+
+        <form class="base-bottom-container">
+            <div></div>
+            <input type="submit" class="direction-button" id="backward" value="Backward" name="backward">
+            <div></div>
+        </form>
     </div>
+
+
 
 
     <script src="mainScript.js"></script>

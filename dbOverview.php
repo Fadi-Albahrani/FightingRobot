@@ -49,7 +49,6 @@
             <td><?php echo $data['degree']; ?></td>
           </tr>
 
-
         <?php
         }
         ?>
@@ -57,8 +56,15 @@
   </table>
 
 <?php
+
+        $direction = mysqli_query($conn, "select direction from robotDirection where id = 1");
+        $data =  mysqli_fetch_array($direction);
       }
 ?>
+
+<h4 style="color:cadetblue; text-align: center;"> The new direction is
+  <span style="color: crimson; font-size:larger"><?php echo $data['direction']; ?></span>
+</h4>
 
 </body>
 

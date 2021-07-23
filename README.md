@@ -1,7 +1,7 @@
 # FightingRobot
 
 ----- Latest Updates ---------
-1- Watson Assitant (Chat Bot) added (no speach to text or text to speech yet). 
+1- Watson Assitant (Chat Bot) added. 
 
 this repository containg the six subtasks of Fighting Robot 
 
